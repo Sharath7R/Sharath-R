@@ -3,168 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <meta name="description" content="My Portfolio website">
-    <title>Portfolio Website | Sharath</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming the CSS provided is saved in 'styles.css' -->
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <nav class="navigation">
-                <div class="logo">Sharath <span>R</span></div>
-                <ul id="sidemenu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#about"><li>About</li></a>
-                    <a href="#projects"><li>Projects</li></a>
-                    <a href="#contact"><li>Contact</li></a>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-        </div>
+    <header class="navigation">
+        <div class="logo">My <span>Portfolio</span></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
+    
+    <section id="hero">
+        <div class="hero-img">
+            <img src="hero-image.jpg" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+            <h1>Your Full Stack Developer Portfolio</h1>
+            <h2>Hi, I'm John Doe, a passionate web developer!</h2>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="title">About Me</div>
+        <div class="about">
+            <div class="about-content">
+                <p>I'm a software developer with a strong focus on web development. I build scalable, efficient, and beautiful applications.</p>
+            </div>
+            <div class="about i">
+                <i class="fa fa-arrow-alt-circle-right"></i>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <div class="container">
-            <!-- Hero Section -->
-            <section id="hero">
-                <div class="hero-content">
-                    <h2 class="work">Software Developer</h2>
-                    <h1>Hi I'm <span>SHARATH </span> from India</h1>
+    <section id="projects">
+        <div class="title">Projects</div>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-img">
+                    <img src="project1.jpg" alt="Project 1">
                 </div>
-                <div class="hero-img">
-                    <img src="images/Avatar.jpg" alt="avatar">
-                </div>
-            </section>
-
-            <!-- About Section -->
-            <section id="about">
-                <div class="title">About</div>
-                <div class="about-content">
-                    <div class="about">
-                        <i class="fas fa-arrow-alt-circle-right"></i>
-                        <p><i class="fas fa-quote-left"></i> Hi, I'am R.Sharath. Computer Science Graduate and a Web Development enthusiast looking for a Career in the software and Web development. <i class="fas fa-quote-right"></i></p>
-                    </div>
-                    <div class="tabs">
-                        <div class="tablink active-link" data-tabname="skills">SKILLS</div>
-                        <div class="tablink" data-tabname="experience">Experience</div>
-                        <div class="tablink" data-tabname="education">Education</div>
-                    </div>
-                    <!-- Tab Content -->
-                    <div class="tab-content active-tab skills" id="skills">
-                        <!-- Skills List -->
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa-brands fa-html5"></i><p>HTML5</p>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa-brands fa-css3"></i><p>CSS3</p>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa-brands fa-js"></i><p>JAVASCRIPT</p>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa-brands fa-java"></i><p>JAVA</p>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa fa-database"></i><p>PSQL & Bash Script</p>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="skill-logo">
-                                <i class="fa-brands fa-react"></i><p>React Js</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-content" id="experience">
-                        <ul>
-                            <li><span>2021-Present </span><br/>Designing Web Interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="education">
-                        <ul>
-                            <li><span>2023 </span><br/>KCEA (JNTUH) <br/> B.tech - Computer Science - 7.4 CGPA</li>
-                            <li><span>2017-2019 </span><br/>State Board Intermediate Education <br/> MPC - Intermediate - 92.2% </li>
-                            <li><span>2017</span><br/>Suryodaya High School <br/> SSC  - 9.3 GPA</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects">
-                <div class="title">PROJECTS</div>
-                <div class="project-container">
-                    <!-- Project Cards -->
-                    <div class="project">
-                        <div class="project-img">
-                            <img src="images/currency-converter-site-.png" alt="currency-converter-site">
-                        </div>
-                        <div class="details">
-                            <h3>Web App</h3>
-                            <p>Currency Converter with Decimal Numbers in RealTime Using API</p>
-                            <a target="_blank" href="https://currency-converter-2001.netlify.app/"><i class="fa-solid fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <!-- Additional Project Cards... -->
-                </div>
-                <div class="btn">
-                    <a href="projects.html">SEE MORE</a>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <div class="title"></div>
-                <div class="row">
-                    <div class="contact-left">
-                        <h2>Contact Me</h2>
-                        <p><i class="fas fa-mail-forward"></i><br/><a href="mailto:7rsharath@gmail.com?subject=Inquiry">7rsharath@gmail.com</a></p>
-                        <p><i class="fa fa-phone"></i><br/><a href="tel:+919********">9*********</a></p>
-                        <div class="btn btn2">
-                            <a href="https://drive.google.com/file/d/1LMPSIbR6VuaVf1IFUOMqO9J3iECIhI1v/view?usp=sharing" download>DOWNLOAD RESUME</a>
-                        </div>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://github.com/Sharath7R/"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/sharath-regunta7/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-threads"></i></a>
-                    </div>        
-                </div>
-
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Name" required>
-                        <input type="email" name="Email" placeholder="Enter Email" required>
-                        <textarea name="Message" rows="6" placeholder="Enter Your message"></textarea>
-                        <button class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                <div class="details">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1</p>
+                    <a href="project1-link.com">View Project</a>
                 </div>
             </div>
-        </section>
-    </main>
+            <!-- More project cards here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-left">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me if you have any questions! reguntasharath@gmail.com</p>
+            <a href="mailto:reguntasharath@gmail.com"><i class="fa fa-envelope"></i> Create Mail</a>
+        </div>
+        <div class="contact-right">
+            <form action="#">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section>
 
     <footer>
-        <div class="container">
-            Copyright © SHARATH R <i class="fa fa-heart"></i> 2023
-        </div>
+        <p>&copy; 2024 John Doe | Designed by Me</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
