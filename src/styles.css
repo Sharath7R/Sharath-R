@@ -374,3 +374,69 @@ footer {
 .mobile-link.active {
     font-weight: bold;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 2rem !important;
+        min-height: auto !important;
+    }
+    
+    .hero-card h4 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .hero-card h1 {
+        font-size: 2.8rem !important;
+        line-height: 1.1 !important;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .hero-card p {
+        font-size: 1.4rem !important;
+        margin-top: 1rem !important;
+        line-height: 1.4;
+    }
+    
+    /* Button adjustments for mobile */
+    .hero-card > div {
+        margin-top: 1.5rem !important;
+        flex-direction: column !important;
+        width: 100%;
+    }
+    
+    .hero-card .btn {
+        width: 100% !important;
+        padding: 1rem 1.5rem !important;
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .hero-card h1 {
+        font-size: 2.2rem !important;
+    }
+    
+    .hero-card p {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Adjust bento grid spacing on mobile */
+@media (max-width: 768px) {
+    .bento-grid {
+        gap: 1rem !important;
+        padding: 2rem 0 !important;
+    }
+    
+    .bento-card {
+        padding: 1.5rem !important;
+        min-height: auto !important;
+    }
+}
